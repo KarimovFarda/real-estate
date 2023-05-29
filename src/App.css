@@ -1,0 +1,57 @@
+.App {
+    position: relative;
+    overflow-x: clip;
+}
+
+.App .container>:nth-child(1){
+    background: var(--black);
+    position: relative;
+}
+
+.white-gradient {
+    position: absolute;
+    width:20rem;
+    height: 20rem;
+    background-color: rgba(255, 255, 255, 0.522);
+    filter: blur(100px);
+    border-radius: 100px;
+}
+
+ /* Default styles for the layout */
+ .container {
+    width: 100%; /* Full width by default */
+    max-width: 100%; /* Default max-width */
+    margin: 0 auto; /* Center the container */
+    box-sizing: border-box;
+  }
+
+  /* Media queries for different breakpoints */
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px; /* Maximum width for small screens */
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px; /* Maximum width for medium screens */
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px; /* Maximum width for large screens */
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px; /* Maximum width for extra large screens */
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .container {
+      max-width: 1440px; /* Maximum width for larger screens */
+    }
+  }
